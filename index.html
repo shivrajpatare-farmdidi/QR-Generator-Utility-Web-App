@@ -3,16 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Generate high-resolution, print-ready QR codes in batch from your CSV file. 100% private, processed entirely in your browser with zero server uploads." />
+
+    <!-- Primary Meta Tags -->
+    <title>QR Batch — Bulk QR Code Generator from CSV</title>
+    <meta name="description" content="Generate multiple high-resolution QR codes from a CSV file. Upload labels and links, create static QR codes locally in your browser, and download them as a ZIP. Free, private, no sign-up required." />
     <meta name="theme-color" content="#2563eb" />
-    <title>QR Batch — Batch QR Code Generator from CSV</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://shivrajpatare-farmdidi.github.io/QR-Generator-Utility-Web-App/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shivrajpatare-farmdidi.github.io/QR-Generator-Utility-Web-App/" />
+    <meta property="og:title" content="QR Batch — Bulk QR Code Generator from CSV" />
+    <meta property="og:description" content="Generate multiple high-resolution QR codes from a CSV file. Upload labels and links, create static QR codes locally in your browser, and download them as a ZIP." />
+    <meta property="og:site_name" content="QR Batch" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="QR Batch — Bulk QR Code Generator from CSV" />
+    <meta name="twitter:description" content="Generate multiple high-resolution QR codes from a CSV file. 100% client-side, private, and free." />
+
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232563eb'><rect x='2' y='2' width='8' height='8' rx='1.5'/><rect x='4' y='4' width='4' height='4' fill='white'/><rect x='14' y='2' width='8' height='8' rx='1.5'/><rect x='16' y='4' width='4' height='4' fill='white'/><rect x='2' y='14' width='8' height='8' rx='1.5'/><rect x='4' y='16' width='4' height='4' fill='white'/><rect x='14' y='14' width='4' height='4' rx='0.75'/><rect x='18' y='18' width='4' height='4' rx='0.75'/></svg>" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "QR Batch",
+      "url": "https://shivrajpatare-farmdidi.github.io/QR-Generator-Utility-Web-App/",
+      "description": "A free, browser-based utility that generates multiple high-resolution static QR codes from a CSV file containing labels and links. All processing happens locally — no data is uploaded.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (Web Browser)",
+      "browserRequirements": "Requires a modern web browser with JavaScript enabled",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Batch QR code generation from CSV",
+        "1024x1024 pixel print-ready PNG output",
+        "Level H (30%) error correction",
+        "Automatic column detection",
+        "Duplicate label disambiguation",
+        "ZIP archive download",
+        "100% client-side processing",
+        "No server upload required"
+      ],
+      "softwareHelp": {
+        "@type": "WebPage",
+        "url": "https://github.com/shivrajpatare-farmdidi/QR-Generator-Utility-Web-App#readme"
+      }
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Fallback content for search engine crawlers that don't execute JavaScript -->
+    <noscript>
+      <div style="max-width: 700px; margin: 2rem auto; padding: 1rem; font-family: system-ui, sans-serif;">
+        <h1>QR Batch — Bulk QR Code Generator from CSV</h1>
+        <p>QR Batch is a free, browser-based utility that generates multiple high-resolution static QR codes from a CSV file. Upload a spreadsheet with Label and Link columns, generate crisp 1024×1024 pixel QR codes, and download them all as a ZIP archive.</p>
+        <h2>How It Works</h2>
+        <ol>
+          <li>Upload a CSV file with Label and Link columns.</li>
+          <li>QR Batch reads each row and validates the URLs.</li>
+          <li>A static QR code is generated for each valid link.</li>
+          <li>Each QR image is named after its corresponding label.</li>
+          <li>Download all QR codes as a single ZIP file.</li>
+        </ol>
+        <h2>Privacy</h2>
+        <p>All processing happens entirely inside your web browser. Your CSV file and generated QR codes are never uploaded to any server.</p>
+        <p><strong>JavaScript is required to use QR Batch.</strong> Please enable JavaScript in your browser settings.</p>
+      </div>
+    </noscript>
   </body>
 </html>

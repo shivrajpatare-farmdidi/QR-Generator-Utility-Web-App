@@ -19,6 +19,7 @@ import { ResultSummary } from './components/ResultSummary';
 import { QRGrid } from './components/QRGrid';
 import { QRModal } from './components/QRModal';
 import { PrivacyFooter } from './components/PrivacyFooter';
+import { InfoSection } from './components/InfoSection';
 
 export const App: React.FC = () => {
   // State
@@ -185,9 +186,9 @@ export const App: React.FC = () => {
       <main className="app-container">
         {!isGenerationComplete && (
           <section className="hero-section">
-            <h1 className="hero-title">Generate QR codes from your CSV</h1>
+            <h1 className="hero-title">QR Batch — Bulk QR Code Generator from CSV</h1>
             <p className="hero-subtitle">
-              Upload a spreadsheet with labels and links. We'll generate crisp, print-ready QR codes and pack them into a ZIP archive instantly.
+              Upload a spreadsheet with labels and links. Generate crisp, print-ready QR codes and download them as a ZIP — entirely in your browser.
             </p>
           </section>
         )}
@@ -247,6 +248,9 @@ export const App: React.FC = () => {
             )}
           </>
         )}
+
+        {/* Informational section for SEO/AEO — only visible when tool is idle */}
+        {!isGenerationComplete && !selectedFileName && <InfoSection />}
       </main>
 
       {/* High-resolution preview lightbox modal */}

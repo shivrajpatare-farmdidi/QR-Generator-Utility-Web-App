@@ -1,0 +1,6 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://shivrajpatare-farmdidi.github.io/QR-Generator-Utility-Web-App/sitemap.xml
