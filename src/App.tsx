@@ -19,7 +19,6 @@ import { ResultSummary } from './components/ResultSummary';
 import { QRGrid } from './components/QRGrid';
 import { QRModal } from './components/QRModal';
 import { PrivacyFooter } from './components/PrivacyFooter';
-import { InfoSection } from './components/InfoSection';
 
 export const App: React.FC = () => {
   // State
@@ -249,8 +248,6 @@ export const App: React.FC = () => {
           </>
         )}
 
-        {/* Informational section for SEO/AEO — only visible when tool is idle */}
-        {!isGenerationComplete && !selectedFileName && <InfoSection />}
       </main>
 
       {/* High-resolution preview lightbox modal */}
