@@ -3,6 +3,7 @@ import type { ColumnMapping, RawCSVRow } from '../types';
 
 const LABEL_CANDIDATES = [
   'label',
+  'labels',
   'name',
   'title',
   'qr_label',
@@ -13,7 +14,9 @@ const LABEL_CANDIDATES = [
 
 const LINK_CANDIDATES = [
   'link',
+  'links',
   'url',
+  'urls',
   'href',
   'website',
   'web',
